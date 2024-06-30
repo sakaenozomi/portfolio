@@ -1577,6 +1577,7 @@ textarea.c-form__input {
     }
 
     /*----------アバウト----------*/
+
     h2 {
         font-size: 45px;
     }
@@ -1621,6 +1622,7 @@ textarea.c-form__input {
     }
     .about_sub_name {
         font-size: 18px;
+        padding: 25px 0 40px 0;
     }
     #about_subtitle {
         font-size: 20px;
@@ -1680,6 +1682,7 @@ textarea.c-form__input {
         height: 100%;
         mix-blend-mode: multiply;
         position: absolute;
+        transform: translate3d(0, 0, 0);
     }
 
     #profile .sp_bg_grass_left {
@@ -1736,8 +1739,8 @@ textarea.c-form__input {
         margin: 0 auto;
     }
     #works .pc_bg_fish_03 {
-        top: 52%;
-        left: 10%;
+        top: 42%;
+        left: 20%;
     }
     #works .pc_bg_fish_04 {
         top: 54%;
