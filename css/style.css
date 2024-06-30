@@ -602,6 +602,7 @@ h2.about::after {
 .works_contact .pc_bg_grass_right {
     top: -40%;
     right: 0%;
+    mix-blend-mode: multiply;
 }
 h2.works {
     position: relative;
