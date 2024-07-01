@@ -364,7 +364,7 @@ main::before {
     color: #fff;
     font-size: 50px;
     position: absolute;
-    top: -450px;
+    top: -7%;
     left: 150px;
     writing-mode: vertical-rl;
     font-feature-settings: initial;
@@ -422,20 +422,19 @@ h3 {
 }
 .pc_header_nav {
     position: fixed;
-    z-index: 999;
+    /* z-index: 999; */
     top: 0;
-    left: 0;
+    left: -10%;
     width: 100%;
-    padding: 20px 40px;
-}
-.logo_img {
-    padding: 80px 0 0 80px;
-}
-.pc_header_nav {
+    padding: 20px 50px;
     font-size: 30px;
     line-height: 1.4;
     text-align: right;
 }
+.logo_img {
+    padding: 80px 0 0 80px;
+}
+
 .header_about {
     padding-bottom: 40px;
 }
