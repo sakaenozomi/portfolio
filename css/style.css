@@ -287,10 +287,10 @@ ul {
     color: #fff;
 }
 
-/* #splash.is-active {
+#splash.is-active {
     opacity: 0;
     visibility: hidden;
-} */
+}
 /* Loading画像中央配置　*/
 #splash_logo {
     position: absolute;
@@ -320,10 +320,10 @@ ul {
     fill-opacity: 1; /*透過1で見える状態*/
     stroke: none; /*線の色なし*/
 }
-/* #mask.is-active {
+#mask.is-active {
     opacity: 1;
     visibility: visible;
-} */
+}
 
 /*--------- 背景 --------*/
 .top_bg {
@@ -410,6 +410,24 @@ h3 {
     line-height: 2.1;
 }
 /*----------ヘッダー----------*/
+
+#header {
+    /* position: fixed; */
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.pc_header_nav {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+}
 .logo_img {
     padding: 80px 0 0 80px;
 }
@@ -642,12 +660,7 @@ h2.works::after {
     margin-bottom: 80px;
     border-radius: 0 60px 0 60px;
     text-align: center;
-    padding: 0 265px 0 265px;
-
-    display: flex;
-    align-items: flex-start;
     padding: 47px 8% 47px 5%;
-    justify-content: space-between;
 
     position: relative;
 
@@ -655,6 +668,12 @@ h2.works::after {
     overflow: hidden;
     /* 上に重ねる */
     z-index: 10;
+}
+.works_box > a {
+    display: flex;
+    align-items: flex-start;
+
+    justify-content: space-between;
 }
 .works_bg_blend {
     background: linear-gradient(to right, #3f8fca, #3fc8ca);
@@ -1472,7 +1491,8 @@ textarea.c-form__input {
         gap: 30px;
     }
     #works_item {
-        width: 320px;
+        max-width: 320px;
+        width: 100%;
         height: 170px;
         background-image: linear-gradient(
             150deg,
@@ -1792,11 +1812,16 @@ textarea.c-form__input {
         display: flex;
         height: 350px;
         padding: 10px 0;
-        flex-direction: column-reverse;
         margin: 0 20px;
+    }
+    .works_box > a {
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        height: 100%;
+        width: 100%;
     }
+
     .works_box .works_box_image {
         width: 100%;
         height: 70%;
