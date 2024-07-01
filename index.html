@@ -490,6 +490,33 @@
     </script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
         onload="if(submitted){window.location='./thanks.html';}"></iframe>
+    <script>
+        (() => {
+            document.addEventListener('DOMContentLoaded', () => {
+                const header = document.getElementById('header');
+                const footer = document.getElementById('footer');
+
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                header.classList.add('hidden');
+                            } else {
+                                header.classList.remove('hidden');
+                            }
+                        });
+                    },
+                    {
+                        root: null,
+                        threshold: 0,
+                    }
+                );
+
+                observer.observe(footer);
+            });
+
+        })()
+    </script>
 </body>
 
 
