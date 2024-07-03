@@ -796,8 +796,8 @@ h2.works::after {
     font-weight: bold;
     color: white;
     position: absolute;
-    top: 10px;
-    left: 30px;
+    top: 30px;
+    left: 20px;
     margin: 0;
 }
 
@@ -1415,6 +1415,7 @@ textarea.c-form__input {
         font-size: 18px;
         font-family: fraunces-variable, sans-serif;
         font-variation-settings: "SOFT" 0, "WONK" 1, "opsz" 9, "wght" 600;
+        font-size: 40px;
     }
 
     main {
