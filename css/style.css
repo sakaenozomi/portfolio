@@ -517,7 +517,7 @@ h2.about::after {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    bottom: 20px;
+    bottom: 8px;
     right: -45px;
     z-index: -1;
 }
@@ -1312,6 +1312,9 @@ textarea.c-form__input {
         /*重なり具合*/
         z-index: 2;
     }
+    .logo_img {
+        padding: 80px 0 0 0px;
+    }
 
     .sp_btn svg {
         width: 83px;
@@ -1568,6 +1571,7 @@ textarea.c-form__input {
     .br-sp {
         display: block;
     }
+
     .top_bg {
         background-image: url("../2x/2x/sp_bg@2x-80.jpg");
         background-repeat: no-repeat;
@@ -2015,5 +2019,14 @@ textarea.c-form__input {
     }
     h2.works::after {
         right: 150px;
+    }
+
+    h2.works::after {
+        right: 125px;
+    }
+}
+@media screen and (max-width: 450px) {
+    h2.works::after {
+        right: 70px;
     }
 }
