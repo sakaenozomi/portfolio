@@ -570,7 +570,7 @@ h2.about::after {
 #profile_img {
     width: 40px;
     display: flex;
-    padding: 5% 0 0 10%;
+    padding: 5% 0 0 18%;
     gap: 20px;
 }
 #skill {
